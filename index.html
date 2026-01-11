@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedFlow | EMR Demo</title>
+    <title>HAM-clinic | EMR Demo</title>
     <style>
-        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f5f6fa; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; height: 100vh; background: var(--bg); }
+        :root { --primary: #e5e9de; --accent: #db3434; --bg: #e0ece6; }
+        body { font-family: 'Times New Roman', sans-serif; margin: 0; display: flex; height: 100vh; background: var(--bg); }
         
         /* Sidebar Styles */
-        nav { width: 250px; background: var(--primary); color: white; padding: 20px; }
+        nav { width: 250px; background: var(--primary); color: rgb(54, 11, 124); padding: 20px; }
         nav h1 { font-size: 1.5rem; color: var(--accent); }
         
         /* Main Content */
@@ -18,12 +18,12 @@
         
         /* Patient Cards */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .patient-card { background: white; padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .patient-card { background: rgb(224, 186, 205); padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); box-shadow: 0 4px 6px rgba(2, 2, 2, 0.05); }
         
         /* Vital Badge */
         .vitals-row { display: flex; gap: 10px; margin-top: 15px; }
-        .vital { background: #eef2f7; padding: 5px 10px; border-radius: 5px; font-size: 0.85rem; font-weight: bold; }
-        .loading-skeleton { background: #eee; height: 100px; border-radius: 12px; animation: pulse 1.5s infinite; }
+        .vital { background: #16c42d; padding: 5px 10px; border-radius: 5px; font-size: 0.85rem; font-weight: bold; }
+        .loading-skeleton { background: #330ce0; height: 100px; border-radius: 12px; animation: pulse 1.5s infinite; }
         
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
     </style>
@@ -31,7 +31,7 @@
 <body>
 
     <nav>
-        <h1>MedFlow EMR</h1>
+        <h1>HAM-clinic EMR</h1>
         <p id="clinic-name">Connecting...</p>
         <hr style="opacity: 0.2">
         <p>👤 <span id="provider-name">Dr. Loading...</span></p>

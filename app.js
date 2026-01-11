@@ -38,7 +38,7 @@ function renderDashboard(data) {
             <p style="font-size: 0.85rem; margin-top: 15px;">
                 <strong>Conditions:</strong> ${patient.conditions.join(', ')}
             </p>
-            <div style="margin-top: 10px; font-size: 0.75rem; color: #666;">
+            <div style="margin-top: 10px; font-size: 0.75rem; color: #1b8092;">
                 Last Encouter: ${patient.lastVisit}
             </div>
         `;
