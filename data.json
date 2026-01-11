@@ -1,0 +1,32 @@
+{
+  "clinicName": "City Health General Hospital",
+  "provider": "Dr. Sarah Chen, MD",
+  "patients": [
+    {
+      "id": "P-99201",
+      "name": "James Wilson",
+      "dob": "1984-05-12",
+      "bloodType": "A+",
+      "vitals": {
+        "temp": "98.6°F",
+        "bp": "120/80",
+        "hr": "72 bpm"
+      },
+      "conditions": ["Hypertension", "Mild Asthma"],
+      "lastVisit": "2025-12-15"
+    },
+    {
+      "id": "P-99202",
+      "name": "Maria Garcia",
+      "dob": "1992-11-03",
+      "bloodType": "O-",
+      "vitals": {
+        "temp": "99.1°F",
+        "bp": "118/75",
+        "hr": "68 bpm"
+      },
+      "conditions": ["Seasonal Allergies"],
+      "lastVisit": "2026-01-05"
+    }
+  ]
+}

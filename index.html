@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedFlow | EMR Demo</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f5f6fa; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; height: 100vh; background: var(--bg); }
+        
+        /* Sidebar Styles */
+        nav { width: 250px; background: var(--primary); color: white; padding: 20px; }
+        nav h1 { font-size: 1.5rem; color: var(--accent); }
+        
+        /* Main Content */
+        main { flex: 1; padding: 30px; overflow-y: auto; }
+        .header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+        
+        /* Patient Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .patient-card { background: white; padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        
+        /* Vital Badge */
+        .vitals-row { display: flex; gap: 10px; margin-top: 15px; }
+        .vital { background: #eef2f7; padding: 5px 10px; border-radius: 5px; font-size: 0.85rem; font-weight: bold; }
+        .loading-skeleton { background: #eee; height: 100px; border-radius: 12px; animation: pulse 1.5s infinite; }
+        
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>MedFlow EMR</h1>
+        <p id="clinic-name">Connecting...</p>
+        <hr style="opacity: 0.2">
+        <p>👤 <span id="provider-name">Dr. Loading...</span></p>
+    </nav>
+
+    <main>
+        <div class="header">
+            <h2>Patient Directory</h2>
+            <button onclick="location.reload()">Refresh Records</button>
+        </div>
+
+        <div id="patient-container" class="grid">
+            <div class="loading-skeleton"></div>
+            <div class="loading-skeleton"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
