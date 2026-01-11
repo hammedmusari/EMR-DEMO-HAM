@@ -18,4 +18,4 @@ A frontend-only medical dashboard designed to demonstrate clinical data manageme
 3. Use the **Live Server** extension to launch `index.html`.
 or
 type the following on your browser
-https://hammedmusari.github.io/EMR-DEMO-HMD/
+https://hammedmusari.github.io/EMR-DEMO-HAM/
